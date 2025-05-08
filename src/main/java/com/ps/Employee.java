@@ -73,3 +73,35 @@ public class Employee {
         return regularPay + overtimePay;
     }
 }
+
+/*--- package com.ps;
+
+import org.junit.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class EmployeeTest {
+
+    @Test
+    public void testPunchInAndPunchOut()
+    {
+        //arrange
+        Employee person1 = new Employee("1","one","x",15);
+        double person1StartTimeExpected = 8.00;
+        double person1EndTimeExpected = 15.00;
+        double totalTimeWorkExpected = 7.00;
+
+        //act
+        person1.punchIn(8.00);
+        person1.punchOut(15.00);
+        double totalWorkTimeActual = person1.getHoursWorked();
+        double person1StartTimeActual = person1.getStartTime();
+        double person1EndTimeActual = person1.getEndTime();
+
+        //assert
+        assertEquals(totalTimeWorkExpected,totalWorkTimeActual);
+        assertEquals(person1StartTimeExpected,person1StartTimeActual);
+        assertEquals(person1EndTimeExpected,person1EndTimeActual);
+    }
+
+} --*/
